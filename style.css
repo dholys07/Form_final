@@ -71,6 +71,11 @@ th, td {
   border: 1px solid #ddd;
 }
 
+
+th {
+  background: Red;
+}
+
 /* Gaya Tabel Responsif */
 @media (max-width: 768px) {
   table {
