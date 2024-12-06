@@ -17,7 +17,6 @@
 
 .file-input_1,.file-input_2 {
   padding: 10px;
-  border: 1px solid #ccc; /* Light gray border */
   border-radius: 4px;
   cursor: pointer;
 }
@@ -82,11 +81,15 @@ th, td {
 
   th:first-child,
   td:first-child {
-    padding-top: 0;
+    padding-top: 10;
   }
+
+    th {
+        display: none;
+    }
 
   th:last-child,
   td:last-child {
-    padding-bottom: 0;
+    padding-bottom: 10;
   }
 }
