@@ -58,10 +58,9 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ddd;
+  border: none;
   margin-bottom: 20px;
-  border-left: none;
-  border-right: none;
+  
 
 }
 
@@ -76,6 +75,7 @@ th, td {
 
 th {
   background: Red;
+  color: White;
 }
 
 /* Gaya Tabel Responsif */
