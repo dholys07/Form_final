@@ -82,6 +82,7 @@ th, td {
   th:first-child,
   td:first-child {
     padding-top: 10;
+    background: black;
   }
 
     th {
