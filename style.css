@@ -84,7 +84,7 @@ th, td {
   td:first-child {
     padding-top: 10;
     background: Red;
-    font-color: White;
+    color: White;
   }
 
     th {
