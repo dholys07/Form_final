@@ -44,8 +44,8 @@ async function predictImage(model, imageData, resultDiv, classes) {
 
 
 // Ganti dengan URL model Anda
-const modelUrl1 = '/model_1/model1.json';
-const modelUrl2 = '/model_2/model2.json';
+const modelUrl1 = 'model_1/model1.json';
+const modelUrl2 = 'model_2/model2.json';
 
 // Kelas untuk setiap model
 const classes1 = ['FCC', 'FDM', 'PC POS', 'RACK IT', 'ROUTER', 'SWITCH', 'UPS'];
