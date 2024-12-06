@@ -18,18 +18,24 @@
         canvas.id = `canvas-${row.id}`;
         canvas.classList.add('canvas_1');
         cell.appendChild(canvas);
+
+
+const result = document.createElement('div');
+        result.id = `result-${row.id}`;
+        result.classList.add('result_1');
+        cell.appendChild(result);
+
+
+
       } else if (index === 2) {
         const input = document.createElement('input');
         input.type = 'file';
         input.id = `fileInput-${row.id}`;
         input.classList.add('file-input_1');
         cell.appendChild(input);
-      } else {
-        const result = document.createElement('div');
-        result.id = `result-${row.id}`;
-        result.classList.add('result_1');
-        cell.appendChild(result);
       }
+        
+      
       row.appendChild(cell);
     });
 
