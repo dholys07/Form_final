@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klasifikasi Perangkat Jaringan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="tabel.js"></script>
+  <script src="model.js"></script>
+</head>
+<body>
+  <table class="responsive-table">
+    <thead>
+      <tr>
+        <th>Perangkat</th>
+        <th>Gambar</th>
+        <th>Pilih Gambar</th>
+        <th>Hasil</th>
+      </tr>
+    </thead>
+    <tbody id="device-list"></tbody>
+  </table>
+
+  <script>
+    devices_1.forEach(createTableRow);
+    devices_2.forEach(createTableRow_2);
+  </script>
+</body>
+</html>

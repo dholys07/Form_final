@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:   
+ #f0f0f0; /* Light gray background */
+  font-family: sans-serif; /* Choose a font family */
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #3498db; /* Blue from your image */
+}
+
+.file-input_1,.file-input_2 {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.canvas_1,.canvas_2 {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.result_1 , .result_2{
+  font-weight: bold;
+  color: #000000; /* Orange from your image */
+}
+
+
+.text-success {
+  color: black;
+}
+
+.text-danger {
+  color: black;
+}
+
+
+
+
+
+/* Gaya Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Gaya Tabel Responsif */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-top: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-bottom: 0;
+  }
+}
