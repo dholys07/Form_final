@@ -10,21 +10,44 @@
   <script src="model.js"></script>
 </head>
 <body>
+
+  <input type="text" id="myInput" placeholder="Masukkan ID SPBU">
+  <span >ID Spbu: </span>
+  <span id="result"></span>
+
+
   <table class="responsive-table">
     <thead>
       <tr>
         <th>Perangkat</th>
         <th>Gambar</th>
         <th>Pilih Gambar</th>
-        <th>Hasil</th>
+        <th>Hasil Prediksi</th>
       </tr>
     </thead>
     <tbody id="device-list"></tbody>
   </table>
+  
+  <div class="button-container">
+    <button class="btn-plus">+</button>
+    <button class="btn-submit">Submit</button>
+  </div>
+
 
   <script>
     devices_1.forEach(createTableRow);
     devices_2.forEach(createTableRow_2);
+
+
+//INPUT ID SPBU
+const input = document.getElementById('myInput');
+const result = document.getElementById('result');
+
+input.addEventListener('input', () => {
+  if (input.value.includes('-')) {
+    result.textContent = input.value;
+  } 
+});
   </script>
 </body>
 </html>
