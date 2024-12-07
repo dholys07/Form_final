@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.canvas_1,.canvas_2 {
+.canvas_1,.canvas_2, .canvas_scan_1, .canvas_scan_2 {
   border: 1px solid #ccc; /* Light gray border */
   border-radius: 4px;
   margin-bottom: 20px;
@@ -29,8 +29,11 @@
   height: 100px;
 }
 
+.canvas_scan_1,.canvas_scan_2 {
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
 .result_1 , .result_2{
-  font-weight: bold;
   color: #000000; /* Orange from your image */
   padding: 10px;
 }
@@ -60,7 +63,7 @@ table {
   border-collapse: collapse;
   border: none;
   margin-bottom: 20px;
-  
+  padding-top: 10px;
 
 }
 
@@ -83,6 +86,7 @@ th {
   table {
     display: block;
     overflow-x: auto;
+    padding-top: 10px;
   }
 
   th, td {
@@ -105,4 +109,108 @@ th {
   td:last-child {
     padding-bottom: 10;
   }
+}
+
+
+.custom-file-upload {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.custom-file-upload img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.custom-file-upload:hover, .custom-file-scan:hover {
+  background-color: #e9e7e7;
+}
+
+
+
+
+.custom-file-scan{
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.custom-file-scan img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+.btn-submit {
+  /* Gaya tombol (sesuaikan dengan preferensi Anda) */
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+
+
+.btn-plus {
+
+  bottom: 20px;
+  background-color: #4CAF50; /* Hijau */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+}
+
+.btn-plus:hover , .btn-submit:hover{
+  background-color: #e9e7e7;
+  color:#4CAF50;
+}
+
+
+.checkmark {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: solid 2px #4CAF50;
+  border-radius: 50%;
+  border-right: none;
+  border-top: none;
+  transform: rotate(45deg);
+  margin-left: 5px; /* Jarak antara teks dan centang */
+  color: #4CAF50;
 }
